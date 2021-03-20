@@ -1,0 +1,15 @@
+@mixin transition($type) {
+  transition: $type var(--animation-dur) var(--timing-fn);
+}
+
+@mixin transition_2types($type, $type2) {
+  transition: $type var(--animation-dur) var(--timing-fn),
+    $type2 var(--animation-dur) var(--timing-fn);
+}
+
+@mixin transition_3types($type, $type2, $type3) {
+  transition: $type var(--animation-dur) var(--timing-fn),
+    $type2 var(--animation-dur) var(--timing-fn),
+    $type3 var(--animation-dur) var(--timing-fn);
+}
+

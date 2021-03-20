@@ -1,0 +1,26 @@
+@import 'base/defaults';
+
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+@import 'components/common';
+@import 'components/list-style';
+@import 'components/container';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/site-nav';
+@import 'components/sicte-contacts';
+@import 'components/hero';
+@import 'components/modal';
+@import 'components/common';
+@import 'components/social';
+@import 'components/footer';
+
+@import 'components/studio/features';
+@import 'components/studio/projects';
+@import 'components/studio/team';
+@import 'components/studio/clients';
+
+@import 'components/portfolio/portfolio';
+

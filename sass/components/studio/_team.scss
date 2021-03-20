@@ -1,0 +1,48 @@
+/* секция наша команда */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+}
+
+.team__item:not(:nth-child(4n)) {
+  margin-right: var(--set-gap);
+}
+
+.team__card {
+  box-shadow: var(--main-card-shadow);
+  border-radius: 4px;
+  background-color: var(--primary-white-color);
+}
+
+.team__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__title {
+  margin: 0;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
+
+.team__title {
+  margin-bottom: 10px;
+}
+
+.team__text {
+  margin-top: 0;
+  margin-bottom: 16;
+
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
