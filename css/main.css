@@ -1251,6 +1251,12 @@ img {
   max-width: 450px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__thumb {
+    height: 260px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: var(--set-gap);
