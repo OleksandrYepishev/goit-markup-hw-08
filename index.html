@@ -59,6 +59,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#mobile-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -582,13 +591,51 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images//icons.svg#mobile-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link--current" href="">Cтудия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-authnav list">
+        <li class="mobile-authnav__item">
+          <a class="mobile-authnav__email" href="mailto:info@devstudio.com"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-authnav__item">
+          <a class="mobile-authnav__phone" href="tel:+380961111111"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social list">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
-    <!-- <script>
-      {
-        const header = document.querySelector('.page-header');
-        const { height } = header.getBoundingClientRect();
-        document.body.style = `padding-top: ${height}px`;
-      }
-    </script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

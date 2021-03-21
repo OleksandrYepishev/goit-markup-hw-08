@@ -1,9 +1,23 @@
 .site-contacts {
-  @extend %header-nav;
-}
-
-.site-contacts {
+  display: none;
   margin-left: auto;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+  }
+
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
 }
 
 .site-contacts__link {
@@ -28,10 +42,15 @@
 }
 
 .site-contacts__item {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  &:first-of-type {
+    @media screen and (min-width:768px), (max-width:1200px) {
+      margin-bottom: 10px;
+    }
+  }
 
   &:last-of-type {
-    margin-left: 50px;
+    @media screen and (min-width:1200px) {
+      margin-left: 50px;
+    }
   }
 }

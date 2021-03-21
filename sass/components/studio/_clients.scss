@@ -1,16 +1,15 @@
-/* Секция постоянные клиенты */
-.clients {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .clients {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-.clients__item {
-  flex-basis: calc((100% - 5 * var(--set-gap)) / 6);
-}
+// .clients__item {
+//   flex-basis: calc((100% - 5 * var(--set-gap)) / 6);
+// }
 
-.clients__item:not(:nth-child(6n)) {
-  margin-right: var(--set-gap);
-}
+// .clients__item:not(:nth-child(6n)) {
+//   margin-right: var(--set-gap);
+// }
 
 .clients__link {
   display: flex;

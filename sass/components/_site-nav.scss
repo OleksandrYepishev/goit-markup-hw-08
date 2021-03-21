@@ -1,9 +1,14 @@
 .site-nav {
   @extend %header-nav;
+  
 }
 
 .site-nav__list {
-  margin-left: 93px;
+  display: none;
+  @media screen and (min-width:768px) {
+    margin-left: 93px;
+    display: flex;
+  }
 }
 
 .site-nav__link {

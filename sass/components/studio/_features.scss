@@ -1,16 +1,16 @@
 /* секция наши преимущества */
 
-.features {
-  display: flex;
-}
+// .features {
+//   display: flex;
+// }
 
-.features__item {
-  flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
-}
+// .features__item {
+//   flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+// }
 
-.features__item:not(:nth-child(4n)) {
-  margin-right: var(--set-gap);
-}
+// .features__item:not(:nth-child(4n)) {
+//   margin-right: var(--set-gap);
+// }
 
 .features__icon {
   display: flex;

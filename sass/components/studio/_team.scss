@@ -1,16 +1,16 @@
-/* секция наша команда */
-.team {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.team__item {
-  flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
-}
+// .team {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-.team__item:not(:nth-child(4n)) {
-  margin-right: var(--set-gap);
-}
+// .team__item {
+//   flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+// }
+
+// .team__item:not(:nth-child(4n)) {
+//   margin-right: var(--set-gap);
+// }
 
 .team__card {
   box-shadow: var(--main-card-shadow);
