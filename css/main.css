@@ -856,6 +856,12 @@ img {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
 .features__text {
   margin: 0;
   font-size: 14px;
@@ -1060,18 +1066,6 @@ img {
   transition: border var(--animation-dur) var(--timing-fn);
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
-}
-
-@media screen and (min-width: 768px) {
-  .clients__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 270px;
-  }
 }
 
 .clients__link:hover, .clients__link:focus {

@@ -35,6 +35,10 @@
 }
 
 .features__title {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
   margin-top: 0px;
   margin-bottom: 10px;
 
