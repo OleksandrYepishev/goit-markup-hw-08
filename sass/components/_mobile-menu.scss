@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding: 48px 40px;
   background-color: var(--primary-white-color);
-  transform: translateX(101%);
+  transform: translateX(100%);
   @include transition(transform);
   opacity: 0;
 
@@ -37,7 +37,8 @@
   outline: none;
   @include transition(fill);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: currentColor;
   }
 
@@ -101,7 +102,7 @@
   line-height: 1.167;
   letter-spacing: 0.02em;
 
-  color: var( --primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .mobile-social {
@@ -118,16 +119,16 @@
   &:not(:first-child) {
     margin-left: 20px;
   }
-  
+
   &:not(:last-child)::after {
     content: '';
 
     position: absolute;
-    display: inline-block;  
+    display: inline-block;
     right: -10px;
     width: 1px;
     height: 22px;
-     
+
     background: rgba(33, 33, 33, 0.2);
   }
 }

@@ -1,7 +1,7 @@
 .hero {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -13,6 +13,13 @@
       var(--hero-gradient)
     ),
     url(../images/hero.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero@2x.jpg);
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

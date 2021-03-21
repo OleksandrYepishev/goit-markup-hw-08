@@ -497,6 +497,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-wrapper {
+    text-align: left;
+  }
+}
+
 .social-media--dark {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -536,16 +542,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
 .sign {
   display: inherit;
   margin-bottom: 20px;
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -626,6 +629,14 @@ img {
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent);
+}
+
+@media screen and (min-width: 1200px) {
+  .sing-form__btn {
+    margin: 0;
+    margin-left: 12px;
+    height: 50px;
+  }
 }
 
 .filter {
