@@ -27,8 +27,14 @@
 }
 
 .contacts {
-  margin-bottom: 60px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .logo.footer {
@@ -86,6 +92,10 @@
   align-items: center;
   margin-top: 0;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .join {

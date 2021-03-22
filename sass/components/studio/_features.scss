@@ -8,8 +8,18 @@
 }
 
 .features__item {
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - var(--set-gap)) / 2);
+
+    &:nth-last-of-type(-n + 2) {
+      margin-bottom: 0;
+    }
 
     &:not(:nth-child(2n)) {
       margin-right: var(--set-gap);
@@ -18,6 +28,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+    margin-bottom: 0;
 
     &:not(:nth-child(4n)) {
       margin-right: var(--set-gap);

@@ -7,14 +7,6 @@
   }
 }
 
-.team__thumb {
-  max-width: 450px;
-
-  @media screen and (min-width: 1200px) {
-    height: 260px;
-  }
-}
-
 .team__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -47,6 +39,17 @@
   box-shadow: var(--main-card-shadow);
   border-radius: 4px;
   background-color: var(--primary-white-color);
+
+  @media screen and (max-width: 767px) {
+    height: 622px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 536px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 428px;
+  }
 }
 
 .team__content {

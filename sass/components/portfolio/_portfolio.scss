@@ -1,8 +1,33 @@
+.portfolio-section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .filter__radiobutton {
@@ -37,7 +62,44 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-    margin: -30px;
+    margin-top: calc(-1 * var(--set-gap));
+    margin-left: calc(-1 * var(--set-gap));
+  }
+}
+
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: calc(100% / 2 - var(--set-gap));
+    margin-left: var(--set-gap);
+    margin-top: var(--set-gap);
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - var(--set-gap));
+  }
+}
+
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
+  @include transition(box-shadow);
+
+  &:hover {
+    box-shadow: var(--portfolio-card-shadow);
   }
 }
 
@@ -52,7 +114,7 @@
   transform: translatey(101%);
   @include transition(transform);
 
-  .portfolio__item:hover & {
+  .portfolio__link:hover & {
     transform: translatey(0);
   }
 }
@@ -70,36 +132,10 @@
   color: var(--primary-white-color);
 }
 
-.portfolio__thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio__item {
-  @include transition(box-shadow);
-
-  &:hover {
-    box-shadow: var(--portfolio-card-shadow);
-  }
-
-  @media screen and (min-width: 480px), (max-width: 480px) {
-    &:not(:last-child) {
-      margin-bottom: var(--set-gap);
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - var(--set-gap)) / 2);
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 2 * var(--set-gap)) / 3);
-  }
-}
-
 .portfolio-content {
-  max-width: 370px;
   padding: 20px 23px;
+
+  flex-grow: 1;
 
   border-right-width: 1px;
   border-right-style: solid;
